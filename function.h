@@ -1,3 +1,2 @@
 #pragma once
-template <typename T>
-T* Fulling(T, int);
+void FullingArray(int *array, int size);
