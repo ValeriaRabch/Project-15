@@ -45,3 +45,6 @@ void SortingArray(int* arr, int size) {
 		}
 	}
 }
+void ChangeArray(int* arr, int index, int x) {
+	arr[index] = x;
+}
