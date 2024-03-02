@@ -8,8 +8,9 @@ int main() {
 	int choose;
 	cout << "Choose type masive \n1 - int\n2 - float\n3 - char"; cin >> choose;
 	while (true) {
-		int a, index, b;
+		int a, index;
 		if (choose == 1) {
+			int b;
 			int arr1[size];
 			cout << "Choose  \n1 - Fulling\n2 - Print\n3 - Min element \n4 - Max element \n5 - Sorting array \n6 - Change element"; cin >> a;
 			if (a == 1) {
@@ -36,6 +37,7 @@ int main() {
 		}
 		if (choose == 2) {
 			float arr2[size];
+			float b;
 			cout << "Choose  \n1 - Fulling\n2 - Print\n3 - Min element \n4 - Max element \n5 - Sorting array \n6 - Change element"; cin >> a;
 			if (a == 1) {
 				FullingArrayFloat(arr2, size);
@@ -57,6 +59,32 @@ int main() {
 				cout << "Which element ?"; cin >> index;
 				cout << "What?"; cin >> b;
 				ChangeArrayFloat(arr2, index - 1, b);
+			}
+		}
+		if (choose == 3) {
+			char arr3[size];
+			char b;
+			cout << "Choose  \n1 - Fulling\n2 - Print\n3 - Min element \n4 - Max element \n5 - Sorting array \n6 - Change element"; cin >> a;
+			if (a == 1) {
+				FullingArrayChar(arr3, size);
+			}
+			if (a == 2) {
+				PrintArrayChar(arr3, size);
+				cout << endl;
+			}
+			if (a == 3) {
+				cout << MinChar(arr3, size) << endl;
+			}
+			if (a == 4) {
+				cout << MaxChar(arr3, size) << endl;
+			}
+			if (a == 5) {
+				SortingArrayChar(arr3, size);
+			}
+			if (a == 6) {
+				cout << "Which element ?"; cin >> index;
+				cout << "What?"; cin >> b;
+				ChangeArrayChar(arr3, index - 1, b);
 			}
 		}
 	}
