@@ -10,30 +10,54 @@ int main() {
 	while (true) {
 		int a, index, b;
 		if (choose == 1) {
-			int arr[size];
+			int arr1[size];
 			cout << "Choose  \n1 - Fulling\n2 - Print\n3 - Min element \n4 - Max element \n5 - Sorting array \n6 - Change element"; cin >> a;
 			if (a == 1) {
-				FullingArray(arr, size);
+				FullingArrayInt(arr1, size);
 			}
 			if (a == 2) {
-				PrintArray(arr, size);
+				PrintArrayInt(arr1, size);
 				cout << endl;
 			}
 			if (a == 3) {
-				cout << Min(arr, size) << endl;
+				cout << MinInt(arr1, size) << endl;
 			}
 			if (a == 4) {
-				cout << Max(arr, size) << endl;
+				cout << MaxInt(arr1, size) << endl;
 			}
 			if (a == 5) {
-				SortingArray(arr, size);
+				SortingArrayInt(arr1, size);
 			}
 			if (a == 6) {
 				cout << "Which element ?"; cin >> index;
 				cout << "What?"; cin >> b;
-				ChangeArray(arr, index - 1, b);
+				ChangeArrayInt(arr1, index - 1, b);
 			}
-			
+		}
+		if (choose == 2) {
+			float arr2[size];
+			cout << "Choose  \n1 - Fulling\n2 - Print\n3 - Min element \n4 - Max element \n5 - Sorting array \n6 - Change element"; cin >> a;
+			if (a == 1) {
+				FullingArrayFloat(arr2, size);
+			}
+			if (a == 2) {
+				PrintArrayFloat(arr2, size);
+				cout << endl;
+			}
+			if (a == 3) {
+				cout << MinFloat(arr2, size) << endl;
+			}
+			if (a == 4) {
+				cout << MaxFloat(arr2, size) << endl;
+			}
+			if (a == 5) {
+				SortingArrayFloat(arr2, size);
+			}
+			if (a == 6) {
+				cout << "Which element ?"; cin >> index;
+				cout << "What?"; cin >> b;
+				ChangeArrayFloat(arr2, index - 1, b);
+			}
 		}
 	}
 	
