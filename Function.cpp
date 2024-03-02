@@ -32,3 +32,16 @@ int Max(int arr[], int size) {
 	}
 	return element;
 }
+
+void SortingArray(int* arr, int size) {
+	int a;
+	for (int i = 0; i < size; i++) {
+		for (int j = 1; j < size; j++) {
+			if (arr[j] < arr[j - 1]) {
+				a = arr[j];
+				arr[j] = arr[j - 1];
+				arr[j - 1] = a;
+			}
+		}
+	}
+}

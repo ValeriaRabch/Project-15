@@ -10,4 +10,6 @@ int main() {
 	PrintArray(arr, size);
 	cout << endl << Min(arr, size) << endl;
 	cout << Max(arr, size) << endl;
+	SortingArray(arr, size);
+	PrintArray(arr, size);
 }
