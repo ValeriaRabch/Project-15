@@ -22,3 +22,13 @@ int Min(int arr[], int size) {
 	}
 	return element;
 }
+
+int Max(int arr[], int size) {
+	int element = arr[0];
+	for (int i = 1; i < size; i++) {
+		if (element < arr[i]) {
+			element = arr[i];
+		}
+	}
+	return element;
+}

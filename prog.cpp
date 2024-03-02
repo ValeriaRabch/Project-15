@@ -8,5 +8,6 @@ int main() {
 	int arr[size];
 	FullingArray(arr, size);
 	PrintArray(arr, size);
-	cout << Min(arr, size) << endl;
+	cout << endl << Min(arr, size) << endl;
+	cout << Max(arr, size) << endl;
 }
